@@ -1,1 +1,47 @@
+body {
+    background-color: #B34440;
+}
 
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 230px;
+    margin: 5px;
+    color: White;
+    animation-name: change;
+    animation-duration: 5s;
+}
+
+p,
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: none;
+    color: White;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+button {
+    color: #662725;
+    background-color: white;
+    padding: 15px;
+}
+
+button:hover {
+    color: white;
+    background-color: #662725;
+    padding: 16px;
+    font-weight: bold;
+}
+
+@keyframes change {
+    from {
+        color: #B34440;
+    }
+    to {
+        color: white
+    }
+}
