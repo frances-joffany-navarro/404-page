@@ -2,9 +2,14 @@ body {
     background-color: #B34440;
 }
 
+main {
+    margin: auto;
+    text-align: center;
+}
+
 h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 250px;
+    font-size: 260px;
     margin: 5px;
     color: White;
     animation-name: change;
@@ -16,25 +21,26 @@ a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration-line: none;
     color: White;
-    font-size: 25px;
+    font-size: 20px;
+    animation-name: change;
+    animation-duration: 2s;
 }
 
-main {
-    margin: auto;
-    /*width: 50%;*/
-    text-align: center;
+section:last-child {
+    margin-top: 50px;
 }
 
-button {
+a {
     color: #662725;
     background-color: white;
     padding: 15px;
+    animation-name: goBack;
+    animation-duration: 2s;
 }
 
-button:hover {
+a:hover {
     color: white;
     background-color: #662725;
-    padding: 16px;
     font-weight: bold;
 }
 
@@ -44,5 +50,16 @@ button:hover {
     }
     to {
         color: white
+    }
+}
+
+@keyframes goBack {
+    from {
+        background-color: #B34440;
+        color: #B34440;
+    }
+    to {
+        background-color: white;
+        color: #662725;
     }
 }
